@@ -33,11 +33,6 @@ if uploaded_file is not None:
         st.warning("No skills found.")
 
 
-    #ats score
-    score = calculate_ats_score(skills)
-    st.subheader("ATS Score")
-    st.metric(label="Resume Score", value=f"{score}%")  
-
     #missing skills detection
     all_skills = [
         "Python",
@@ -66,6 +61,12 @@ if uploaded_file is not None:
     
     for skill in missing_skills:
         st.warning(skill)
+
+
+    #ats score
+    score = calculate_ats_score(skills)
+    st.subheader("ATS Score")
+    st.metric(label="Resume Score", value=f"{score}%")     
 
 
 
