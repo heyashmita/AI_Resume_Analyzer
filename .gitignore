@@ -1,16 +1,15 @@
-# Virtual Environment
+# Development files
+check_dataset.py
+check_categories.py
+test_cleaner.py
+download_nltk.py
+
+# VS Code
+.vscode/
+
+# Virtual environment
 venv/
 
 # Python cache
 __pycache__/
 *.pyc
-
-# VS Code
-.vscode/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS files
-.DS_Store
-Thumbs.db
