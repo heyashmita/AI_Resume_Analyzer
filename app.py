@@ -18,10 +18,10 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    # Extract text
+    #extract text
     resume_text = extract_text_from_pdf(uploaded_file)
 
-    # Extract skills
+    #extract skills
     skills = extract_skills(resume_text)
 
     st.subheader("Extracted Skills")
